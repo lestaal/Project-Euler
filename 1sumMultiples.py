@@ -2,15 +2,15 @@ import math
 
 ### Problem 1 ###
 
-def sum_multiples(multiplesOf, limit):
+def sum_multiples(multiples_of, limit):
     """
-    Inputs: multiplesOf - set of integers, limit - integer
-    Outputs: integer sum of all multiples of integers in multiplesOf
+    Inputs: multiples_of - set of integers, limit - integer
+    Outputs: integer sum of all multiples of integers in multiples_of
              that are less than limit
     """
     result = 0
     for i in xrange(limit):
-        for mult in multiplesOf:
+        for mult in multiples_of:
             if i%mult == 0:
                 result += i
                 break
